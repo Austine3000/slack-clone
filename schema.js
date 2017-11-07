@@ -3,7 +3,7 @@ export default `
 type Team {
     owner: User!
     members: [User!]
-    channels: [Channels!]! 
+    channels: [Channel!]! 
 }
 
 type Channel {
@@ -11,6 +11,7 @@ type Channel {
     name: String!
     public: Boolean!
     messages: [Message!]!
+    users: [User!]!
 }
 
 type Message {
