@@ -9,6 +9,7 @@ type Team {
 type Channel {
     id: Int! 
     name: String!
+    public: Boolean!
     messages: [Message!]!
 }
 
@@ -23,6 +24,7 @@ type User {
     id: Int!
     username: String!
     email: String!
+    teams: [Team!]!
 }
 
 type Query {
