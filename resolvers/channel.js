@@ -5,6 +5,7 @@ export default {
                 await models.Channel.create(args);
                 return true;
             } catch (err) {
+                console.log(err);
                 return false;
             }
         }

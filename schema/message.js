@@ -7,4 +7,8 @@ type Message {
     channel: Channel!
 }
 
+type Mutation {
+    createMessage(channelId: Int!, text: String!): Boolean!
+}
+
 `;
